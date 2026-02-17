@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&display=swap');
+
+:root {
+  --cyber-dark: #0a0e27;
+  --cyber-darker: #050812;
+  --cyber-electric: #00ff99;
+  --cyber-blue: #0099ff;
+  --cyber-purple: #9933ff;
+  --cyber-accent: #ff00ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(135deg, var(--cyber-darker) 0%, #0f1333 50%, var(--cyber-darker) 100%);
+  color: #e5e7eb;
+  font-family: 'JetBrains Mono', monospace;
+  line-height: 1.6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Animacje neonowe */
+@keyframes glow {
+  0%, 100% { text-shadow: 0 0 10px var(--cyber-electric); }
+  50% { text-shadow: 0 0 20px var(--cyber-electric), 0 0 30px var(--cyber-electric); }
+}
+
+@keyframes pulse-border {
+  0%, 100% { border-color: var(--cyber-electric); }
+  50% { border-color: var(--cyber-blue); }
+}
+
+.glow-text {
+  animation: glow 3s ease-in-out infinite;
+}
+
+.pulse-border {
+  animation: pulse-border 2s ease-in-out infinite;
+}
+
+/* Efekt glassmorphism */
+.glass-effect {
+  background: rgba(10, 14, 39, 0.6);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 153, 0.1);
+}
+
+/* Grid pattern */
+.grid-pattern {
+  background-image: 
+    linear-gradient(0deg, transparent 24%, rgba(0, 255, 153, 0.05) 25%, rgba(0, 255, 153, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 255, 153, 0.05) 75%, rgba(0, 255, 153, 0.05) 76%, transparent 77%, transparent),
+    linear-gradient(90deg, transparent 24%, rgba(0, 255, 153, 0.05) 25%, rgba(0, 255, 153, 0.05) 26%, transparent 27%, transparent 74%, rgba(0, 255, 153, 0.05) 75%, rgba(0, 255, 153, 0.05) 76%, transparent 77%, transparent);
+  background-size: 50px 50px;
+}

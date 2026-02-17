@@ -1,0 +1,28 @@
+{
+  "name": "zse-plan-lekcji-pro",
+  "version": "2.0.0",
+  "type": "module",
+  "description": "Modern, offline-ready school schedule (plan lekcji) for ZSE Bydgoszcz",
+  "license": "MIT",
+  "scripts": {
+    "parse": "node parse.js",
+    "parse:watch": "nodemon --watch data parse.js",
+    "dev": "npm run parse && vite",
+    "build": "npm run parse && vite build",
+    "preview": "vite preview",
+    "server": "npm run parse && node server.js",
+    "vercel-build": "npm run parse && vite build"
+  },
+  "dependencies": {
+    "vue": "^3.3.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.0",
+    "vite": "^4.3.0",
+    "tailwindcss": "^3.3.0",
+    "postcss": "^8.4.24",
+    "autoprefixer": "^10.4.14",
+    "cheerio": "^1.0.0-rc.12",
+    "nodemon": "^3.0.1"
+  }
+}

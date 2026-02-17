@@ -1,0 +1,54 @@
+INSTRUKCJA DODAWANIA ZDJĘĆ NAUCZYCIELI
+======================================
+
+1. Format pliku: JPG lub PNG.
+
+2. Nazewnictwo: Plik MUSI nazywać się tak samo jak inicjały w planie.
+   Przykład: 
+   - Jeśli w planie widnieje "TL" -> nazwij zdjęcie "TL.jpg"
+   - Jeśli w planie widnieje "Bd" -> nazwij zdjęcie "Bd.jpg"
+   - Małe i wielkie litery MAJĄ ZNACZENIE!
+
+3. Lokalizacja: Wrzuć zdjęcia do folderu /public/nauczyciele/
+   
+   Np:
+   zse-plan-lekcji/
+     public/
+       nauczyciele/
+         TL.jpg
+         Bd.jpg
+         ŁA.jpg
+         JK.jpg
+
+4. Rozmiary:
+   - Minimalne: 200×250px
+   - Idealne: 300×375px (aspect ratio 1:1.25)
+   - Maksymalnie: 500KB
+   
+   Zdjęcie będzie automatycznie przycięte do formatu legitymacyjnego
+   (aspect-ratio: 4/5, object-fit: cover)
+
+5. Skrypt automatycznie:
+   - Dopasuje zdjęcie do dymka nauczyciela
+   - Jeśli nie dodasz zdjęcia, wyświetli się komunikat:
+     "Zdjęcia jeszcze nie ma – wkrótce się pojawi"
+   - Obsłuży błędy wczytywania (np. uszkodzony plik)
+
+6. Dodanie nowych zdjęć:
+   - Po wrzuceniu pliku, przeładuj stronę (Ctrl+F5)
+   - Zdjęcie powinno się pojawić przy najechaniu na inicjały
+
+7. Usuwanie zdjęcia:
+   - Usuń plik z folderu /public/nauczyciele/
+   - Przeładuj stronę - wróci komunikat "Brak zdjęcia"
+
+8. Wskazówki:
+   - Używaj zdjęć legitymacyjnych (czołówka)
+   - Zapewnia jednolitość wyglądu
+   - Nie używaj zbyt małych zdjęć (będzie się pixelować)
+   - Dla najlepszej jakości: konwertuj PNG na JPG
+
+======================================
+WAŻNE: Po dodaniu zdjęć, czasami potrzebna jest pełna przeładowanie (Ctrl+Shift+R)
+aby wyczyszczony został cache przeglądarki.
+======================================
